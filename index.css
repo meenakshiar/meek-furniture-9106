@@ -1,0 +1,73 @@
+
+        
+        body{font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Roboto,Oxygen-Sans,"Fira Sans","Droid Sans",Ubuntu,Cantarell,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            margin-left: 0px;
+            margin-right: 0px;
+            width: 100%;}
+
+.sh_text_image{display: flex;
+            width: 100%;
+            background-color:#EBF5F3;
+            align-items: center;}
+
+.sh_text_image p{font-size: 20px;
+            color:#2B3857;
+            line-height:40px ;}
+
+.sh_text_image>div{width: 50%;
+             margin-left: 5%;
+             font-size: 25px;
+             line-height: 50px;}
+
+.sh_text_image>div>img{width: 80%;}
+
+.sh_text_image input{ width: 60%;
+             padding: 15px;
+             font-size: 20px;
+             border-radius: 10px;}
+
+.sh_text_image button{padding: 15px;
+             font-size: 22px;
+             color: white;
+             background-color: #08cf65;
+             border: none;
+             border-radius: 10px;
+             cursor: pointer;}
+
+.sh_logo_div{text-align: center;
+         background-color:#EBF5F3;
+         padding-bottom: 20px;
+         padding-top: 10px;}
+
+.sh_logo_div>img{margin-left: 5%;}
+
+
+
+/*---- mid screen --------------------------------------------*/
+@media(min-width: 600px) and (max-width: 1200px) {
+.sh_text_image{ flex-direction: column;
+            text-align: center;}
+
+.sh_text_image button{margin-top: 10px;}
+.sh_text_image>div>img{width: 80%;}
+.sh_text_image>div{width: 100%;}
+}
+
+
+
+/*---- small screen -------------------------------------------*/
+@media(min-width: 200px) and (max-width: 599px) {
+.sh_text_image{flex-direction: column;
+            text-align: center;
+            font-size: 20px;}
+.sh_text_image>div>img{width: 100%;}
+.sh_text_image button{margin-top: 10px;}
+
+.sh_text_image>div{width: 100%;
+              margin-left: 0%;
+              font-size: 20px;
+              line-height: 36px;}
+.sh_text_image p{font-size: 19px;
+              line-height:28px ;}
+
+}
