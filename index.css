@@ -1,6 +1,6 @@
 
         
-        body{font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Roboto,Oxygen-Sans,"Fira Sans","Droid Sans",Ubuntu,Cantarell,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+body{font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Roboto,Oxygen-Sans,"Fira Sans","Droid Sans",Ubuntu,Cantarell,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
             margin-left: 0px;
             margin-right: 0px;
             width: 100%;}
@@ -10,7 +10,7 @@
             background-color:#EBF5F3;
             align-items: center;}
 
-.sh_text_image p{font-size: 20px;
+.sh_text_image p,.sh_transform{font-size: 20px;
             color:#2B3857;
             line-height:40px ;}
 
@@ -34,6 +34,8 @@
              border-radius: 10px;
              cursor: pointer;}
 
+             
+
 .sh_logo_div{text-align: center;
          background-color:#EBF5F3;
          padding-bottom: 20px;
@@ -41,9 +43,64 @@
 
 .sh_logo_div>img{margin-left: 5%;}
 
+#sh_arrow{display: flex;
+          text-align: left;}
+#sh_arrow p{font-size: 23px;
+        color:green;
+        cursor: pointer;
+        }
+#sh_p_arrow{ margin-left: 1px;
+    font-size: 28px}
+#sh_p_arrow:hover{margin-left: 10px;
+        transition:0.5s;}
+
+.sh_transform{text-align: center;}
+.sh_transform>h1{color: black;
+                         font-size: 32px;}
+.sh_card_marketing{display: grid;
+                           width: 80%;
+                           font-size: 20px;
+                           margin: auto;
+                           gap: 20px;
+                           grid-template-columns: repeat(4,1fr); }
+.sh_card_marketing>div{background-color:#EBF5F3;
+                               border-radius: 10px;
+                               height: 400px;
+                               padding: 25px;}
+ .sh_card_marketing>div:hover{background-color: #181f38;
+                              color: white;
+                              cursor: pointer;
+                              transition: 0.5s;}
+.sh_card_marketing p{font-size:17px;
+                              line-height: 25px;}
 
 
-/*---- mid screen --------------------------------------------*/
+#sh_bottom_div{background-color: #181f38;
+                               color: white;
+    padding-bottom: 20px;}
+#sh_bottom_div p{ color: white;}
+
+.sh_button_div{display: flex;
+               padding-top: 40px;
+               padding-bottom: 40px;
+               font-size: 20px;
+               justify-content: center;}
+
+.sh_button_div button{width:180px;
+                      padding: 0px 20px 0px 20px;
+                      border: none;
+                      border-radius: 10px;
+                      margin-right: 10px;
+                      font-size: 20px;
+                      background-color: #08cf65;
+                      color: white;}
+.sh_button_div button:hover{background-color: green;
+                            transition: 0.7s;
+                            cursor: pointer;}
+
+
+
+/*----------- mid screen --------------------------------------------*/
 @media(min-width: 600px) and (max-width: 1200px) {
 .sh_text_image{ flex-direction: column;
             text-align: center;}
@@ -51,7 +108,24 @@
 .sh_text_image button{margin-top: 10px;}
 .sh_text_image>div>img{width: 80%;}
 .sh_text_image>div{width: 100%;}
+
+#sh_arrow{justify-content: center;
 }
+
+.sh_card_marketing{
+    grid-template-columns: repeat(2,1fr); }
+
+    .sh_button_div{
+        flex-direction: column;
+        text-align: center;}
+
+.sh_button_div button{width:180px;
+               padding: 15px 20px 15px 20px;
+               margin: auto;
+               }
+
+}
+
 
 
 
@@ -67,7 +141,24 @@
               margin-left: 0%;
               font-size: 20px;
               line-height: 36px;}
-.sh_text_image p{font-size: 19px;
+.sh_text_image p{font-size: 16px;
               line-height:28px ;}
+#sh_arrow{justify-content: center;}
+.sh_card_marketing{
+    grid-template-columns: repeat(1,1fr); }
+
+    .sh_button_div{
+        padding-top: -15px;
+        padding-bottom: -15px;
+        flex-direction: column;
+        text-align: center;}
+
+.sh_button_div button{width:180px;
+               font-size: 15px;
+               padding: 10px 20px 10px 20px;
+               margin: auto;
+               }
 
 }
+
+
