@@ -187,3 +187,6 @@ color:white;
     font-size: 20px;
 
 }
+#search>i:hover{
+    cursor: pointer;
+}

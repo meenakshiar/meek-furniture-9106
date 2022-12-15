@@ -96,6 +96,7 @@ function displaymain(data){
     data.forEach((ele) => {
         let div=document.createElement("div")
         div.classList.add("mylist")
+        
         let img=document.createElement("img")
         img.setAttribute("src",ele.img)
 
@@ -108,6 +109,7 @@ function displaymain(data){
         let des=document.createElement("p")
         des.innerText=ele.description
 
+        
         div.append(img,spec,name,des)
         document.querySelector("#main").append(div)
 
@@ -123,6 +125,7 @@ function func(){
         document.querySelector("#main1").innerHTML=""
         data.forEach((ele) => {
             let div=document.createElement("div")
+            div.classList.add("mylist")
     
             let img=document.createElement("img")
             img.setAttribute("src",ele.img)
@@ -152,8 +155,9 @@ west.addEventListener("click",myfunc)
 
 function myfunc(){
     ser.innerHTML=""
-    ser.innerHTML=`<input onchange="mychange()" type="text" placeholder="Search.." name="search">`
+    ser.innerHTML=`<input  onchange="mychange()" type="text" placeholder="Search.." name="search">`
 }
+
 
 function mychange(){
     let mydata=document.querySelector("input").value
@@ -164,11 +168,13 @@ function mychange(){
 }
 mychange()
 
-let went=document.getElementsByClassName("mylist")
-went.addEventListener("click",myfunc2)
+
+
 
 function myfunc2(){
-    console.log("faisal")
-    window.open("video.html")
+    var a=document.querySelector(".mylist")
+    
+    window.location="video.html"
 }
+myfunc2()
 
