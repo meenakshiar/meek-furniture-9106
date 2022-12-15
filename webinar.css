@@ -1,0 +1,189 @@
+*{
+    margin:0px;
+}
+#top1{
+    width:100%;
+    margin-top: 0px;
+    background-color: rgb(235, 245, 243);
+    height:500px
+}
+#top{
+    width:1350px;
+    
+    display:flex;
+    margin:auto;
+    justify-content: space-evenly;
+    /* border:1px solid blue; */
+}
+#top>div{
+    /* border:1px solid red ; */
+    padding-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    
+}
+#top>div>img{
+    width:95%;
+    height:200px;
+    border-radius: 10px;
+    margin-left: 10px;
+    transition: transform .5s ease;
+    /* padding-top: 15px; */
+    /* border:1px solid red */
+}
+#top>div>h3{
+    margin-top: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 450;
+    margin-left: 10px;
+    font-family: TT_Norms_Pro, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Oxygen-Sans, "Fira Sans", "Droid Sans", Ubuntu, Cantarell, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+#top>div>p{
+    margin-top: 5px;
+    margin-left: 10px;
+    color:rgb(101, 118, 148);
+    font-family: TT_Norms_Pro, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Oxygen-Sans, "Fira Sans", "Droid Sans", Ubuntu, Cantarell, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+#header{
+    width:500px;
+    margin:auto;
+}
+#header>h1{
+
+    margin-left: 10px;
+    font-size: 56px;
+    /* margin-left :535px; */
+    color: rgb(24, 31, 56);
+    margin-top:30px;
+    margin-bottom:30px;
+    font-family:  TT_Norms_Pro, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Oxygen-Sans, "Fira Sans", "Droid Sans", Ubuntu, Cantarell, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#main{
+    width:1290px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:5px;
+    
+}
+#main>div>img{
+    width:93%;
+    margin-left: 20px;
+    margin-right: 25px;
+    border-radius: 10px;
+    transition: transform .5s ease;
+}
+#main>div>p{
+   
+    margin-left: 15px;
+    font-family:TT_Norms_Pro, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Oxygen-Sans, "Fira Sans", "Droid Sans", Ubuntu, Cantarell, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+    color: rgb(101, 118, 148);
+}
+#main>div>h3{
+    color: rgb(24, 31, 56);
+    margin-left: 15px;
+    font-weight: 600;
+    margin-top: 5px;
+    font-family:TT_Norms_Pro, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Oxygen-Sans, "Fira Sans", "Droid Sans", Ubuntu, Cantarell, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+#main>div{
+    padding-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+#main1{
+    width:1290px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:5px;
+    
+}
+#main1>div>img{
+    width:93%;
+    margin-left: 20px;
+    margin-right: 25px;
+    border-radius: 10px;
+    transition: transform .5s ease;
+}
+#main1>div>p{
+   
+    margin-left: 15px;
+    font-family:TT_Norms_Pro, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Oxygen-Sans, "Fira Sans", "Droid Sans", Ubuntu, Cantarell, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+    color: rgb(101, 118, 148);
+}
+#main1>div>h3{
+    color: rgb(24, 31, 56);
+    margin-left: 15px;
+    font-weight: 600;
+    margin-top: 5px;
+    font-family:TT_Norms_Pro, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Oxygen-Sans, "Fira Sans", "Droid Sans", Ubuntu, Cantarell, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+#main1>div{
+    padding-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+#more>button{
+    width:200px;
+    height:55px;
+    border-radius: 8px;
+    font-size: 20px;
+    color:rgb(10, 97, 90);
+    margin-bottom: 20px;
+}
+#more{
+   width:300px; 
+   margin:auto;
+   display: flex;
+   justify-content: center;
+   margin-top: 40px;
+}
+#more>button:hover{
+cursor: pointer;
+background-color: rgb(10, 97, 90);
+color:white;
+
+}
+#main>div:hover{
+    cursor: pointer;
+    background-color: rgb(235, 245, 243);
+    transform: scale(1.01);
+}
+#main1>div:hover{
+    cursor: pointer;
+    background-color: rgb(235, 245, 243);
+    transform: scale(1.01);
+}
+#top>div:hover{
+    cursor: pointer;
+    background-color: white;
+    transform: scale(1.01);
+}
+#search{
+    width:30px;
+    /* border:1px solid red; */
+    margin-left: 135px;
+    margin-top:20px;
+    margin-bottom:15px
+}
+#search>i{
+    color:rgb(10, 97, 90)
+}
+#search>input{
+    width:550px;
+    height:50px;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
