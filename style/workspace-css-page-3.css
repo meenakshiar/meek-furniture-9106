@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     background-color: #61728F;
-    /* position: relative; */
+    position: relative;
 
 }
 
@@ -19,13 +19,12 @@
     background-color: black;
     border-radius: 15px;
     height: 90%;
-    width: 65%;
+    width: 75%;
     align-items: center;
     display: flex;
-    /* flex-direction: column; */
-    grid-template-columns: repeat(1fr, );
+    /* gap: 4rem; */
     background-color: white;
-    padding: 0% 10%;
+    padding: 0% 5%;
 
 }
 
@@ -34,7 +33,7 @@ select,
 input[type="number"],
 input[type="email"],
 textarea {
-    width: 100%;
+    width: 110%;
     padding: 12px;
     border: 1px solid rgb(175, 192, 236);
     background-color: #EDF1F6;
@@ -46,7 +45,7 @@ textarea {
 }
 
 input[type="number"] {
-    width: 100%;
+    width: 192%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -64,16 +63,25 @@ input[type="submit"]:hover {
     width: 35%;
 }
 
-.left_logo_container>div:last-child>h2,
+.left_logo_container>div:last-child {
+    width: 80%;
+}
+
+.left_logo_container>div:last-child>h3,
 span {
     color: black;
     margin-top: -60px;
     font-family: 'Poppins', sans-serif;
 }
 
-.left_logo_container>div:last-child>h2 {
+.left_logo_container>div:last-child>h3 {
     font-size: 1.7rem;
-    line-height: 3rem;
+}
+
+.left_logo_container>div:last-child>p {
+    font-family: 'Poppins', sans-serif;
+    font-size: .8rem;
+    line-height: 1.7rem;
 }
 
 .left_logo_container>div:first-child>img {
@@ -83,19 +91,19 @@ span {
 }
 
 .right_logo_container {
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
 
 .right_logo_container>div:first-child>img {
-    width: 100%;
+    width: 140%;
+    overflow: hidden;
 }
 
 
 #number_div {
     display: flex;
-    /* width: 100%; */
     gap: 30px;
 
 }
@@ -164,32 +172,18 @@ form {
     background-color: #006358;
 }
 
-/* =================== mid screen ============================== */
-@media(min-width: 600px) and (max-width: 1000px) {
+/* @media (max-width:300px) {} */
+
+@media (min-width:300px) and (max-width:1000px) {
     .main_container {
         background-color: black;
         border-radius: 15px;
         height: 90%;
-        width: 45%;
-        /* align-items: center; */
-        display: grid;
+        width: 65%;
+        align-items: center;
+        /* display: flex; */
         background-color: white;
         padding: 0% 10%;
-        text-align: center;
 
     }
-
-    #copy_this_div {
-        display: flex;
-        margin-left: -8rem;
-        height: 99vh;
-        justify-content: center;
-        align-items: center;
-        background-color: #61728F;
-        position: relative;
-
-    }
-
-    .left_logo_container {}
-
 }
