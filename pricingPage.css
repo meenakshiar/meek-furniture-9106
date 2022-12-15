@@ -26,32 +26,44 @@
     border: 1px solid red;
     margin: auto;
     display: flex;
-    
+    padding-bottom: 4%;
     width: 78%;
 }
 
 .pricing-card{
-    /* border: 1px solid; */
+    border: 1px solid green;
     margin: 1px;
     width: 20%;
 }
-.pricing-card h2{
+
+/* pricing cards section -----------------------*/
+.card-one, .card-two, .card-three, .card-four{  
+    border: 1px solid ;
+} 
+
+.card-one{
+    width: auto;
+    height: 160px;
+}
+
+
+/* .pricing-card h2{
     font-size: 25px;
     line-height: 70px;
     font-weight: 700px;
-}
+} */
 
-.pricing-card p{
+/* .pricing-card p{
     line-height: 28px;
     font-weight: 500px;
     font-size: 18px;
-    /* color: #2b3857; */
-}
+     color: #2b3857; 
+} */
 
-.pricing-card li{
+/* .pricing-card li{
     cursor: pointer;
     text-decoration: dotted;
-}
+} */
 
 button{
     cursor: pointer;
@@ -174,13 +186,14 @@ button{
     margin-left: 20px;
 }
 
-.add-on-card :hover{
+.add-on-cardwrap :hover{
     cursor: pointer;
-    /* background-color: #04454d; */
+    background-color: #04454d;
+    color: white;
 }
 
 .signup-section {
-    border: 1px solid ;
+    /* border: 1px solid ; */
     display: flex;
 }
 
@@ -197,12 +210,51 @@ button{
     padding: auto;
 }
 
-.leader-content{
-    border: 1px solid;
+.input_button{
+    /* border: 1px solid ; */
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+}
+
+.input_button > input{
+    width: 350px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 12px;
+    border-color: #c1c9d8;
+    /* line-height: 32px; */
+    padding: 2px 0 2px 20px;
+    margin: auto;
+}
+
+.input_button > button{
+    margin-left: 15px;
+    border-radius: 12px;
+    width: 200px;
+    height: 70px;
+    border: none;
+    background-color: #08cf56;
+    border-color: #08cf56;
+    color: white;
+    font-size: 25px;
+    line-height: 28px;
+    padding: 14px 22px;
+}
+
+.leader-content{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    width: 78%;
+    margin: auto;
+    padding-top: 2%;
 }
 
 .faq-section{
     border: 1px solid;
-    background-color: #ebf5f3;
+    background-color: #ebf5f3;    
 }
