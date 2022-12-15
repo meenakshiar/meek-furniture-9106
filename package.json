@@ -1,0 +1,20 @@
+{
+  "name": "meek-furniture-9106",
+  "version": "1.0.0",
+  "description": "Project code - meek-furniture-9106",
+  "main": "pricingPage.js",
+  "scripts": {
+    "start": "json-server --watch ./database/db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meenakshiar/meek-furniture-9106.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meenakshiar/meek-furniture-9106/issues"
+  },
+  "homepage": "https://github.com/meenakshiar/meek-furniture-9106#readme"
+}
