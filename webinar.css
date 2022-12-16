@@ -1,15 +1,15 @@
 *{
     margin:0px;
+    padding: 0px;
 }
 #top1{
     width:100%;
-    margin-top: 0px;
+    /* margin-top: 0px; */
     background-color: rgb(235, 245, 243);
     height:500px
 }
 #top{
     width:1350px;
-    
     display:flex;
     margin:auto;
     justify-content: space-evenly;

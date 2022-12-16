@@ -177,4 +177,10 @@ function myfunc2(){
     window.location="video.html"
 }
 myfunc2()
+function myfunc8(){
+    let c=document.querySelector("#top")
+    
+    window.location="description.html"
+}
+myfunc8()
 
