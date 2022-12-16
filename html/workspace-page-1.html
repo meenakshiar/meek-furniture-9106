@@ -43,12 +43,15 @@
                                 </select>
                             </div>
                             <div>
-                                <input type="number" name="" id="number" placeholder="phone number">
+                                <input type="number" name="" onkeyup="validation(this)" id="number"
+                                    placeholder="phone number">
+                                <div id="res"></div>
                             </div>
                         </div>
 
                         <div>
-                            <input type="email" name="" id="Company-Name" placeholder="Your company name">
+                            <input type="email" name="" onkeyup="validationMail(this)" id="Company-Name"
+                                placeholder="Your company name">
                         </div>
 
                         <div>
@@ -115,7 +118,7 @@
                     </div>
 
 
-                    <button class="next_button">Next</button>
+                    <div class="next_button" onclick="temp()">Next</div>
 
                 </div>
             </div>
