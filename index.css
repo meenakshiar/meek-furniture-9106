@@ -76,8 +76,10 @@ body{font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neu
 
 
 #sh_bottom_div{background-color: #181f38;
-                               color: white;
-    padding-bottom: 20px;}
+               flex-direction: column;
+               padding: 60px 0px 80px 0px;
+               text-align: center;
+                               color: white;}
 #sh_bottom_div p{ color: white;}
 
 .sh_button_div{display: flex;
@@ -103,7 +105,9 @@ body{font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neu
 /*----------- mid screen --------------------------------------------*/
 @media(min-width: 600px) and (max-width: 1200px) {
 .sh_text_image{ flex-direction: column;
+                width: 100%;
             text-align: center;}
+
 
 .sh_text_image button{margin-top: 10px;}
 .sh_text_image>div>img{width: 80%;}
