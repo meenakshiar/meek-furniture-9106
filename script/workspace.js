@@ -38,6 +38,8 @@ function temp() {
         let phone = document.getElementById('number').value || alert('Please fill the form first');
         let companyName = document.getElementById('Company-Name').value || alert('Please fill the form first');
         let countyName = document.getElementById('counties_name').value || alert('Please fill the form first');
+        let Username = document.getElementById('Username').value || alert('Please fill the form first');
+        let Password = document.getElementById('Password').value || alert('Please fill the form first');
 
         // console.log(countryCode)
 
@@ -46,6 +48,8 @@ function temp() {
             Phone: countryCode + phone,
             Company_Name: companyName,
             county_Name: countyName,
+            Username,
+            Password
         };
 
         localStorage.setItem('data', JSON.stringify(details));
@@ -56,7 +60,7 @@ function temp() {
     })
 
 }
-//==========================================================
+//=============================================================================================================
 function secondPage() {
     let get_data = JSON.parse(localStorage.getItem('data'))
 
@@ -79,7 +83,7 @@ function secondPage() {
     });
 }
 
-//==========================================================
+//================================================================================================================
 function pagethree() {
     let get_data = JSON.parse(localStorage.getItem('data'))
     let submit_btn_3rd = document.querySelector('.next_button3');
@@ -97,7 +101,7 @@ function pagethree() {
     });
 }
 
-//==========================================================
+//===============================================================================================================
 function pageFour() {
     let get_data = JSON.parse(localStorage.getItem('data'))
     let submit_btn_4th = document.querySelector('.next_button4');
@@ -115,7 +119,7 @@ function pageFour() {
     });
 }
 
-//==========================================================
+//===============================================================================================================
 function pageFive() {
     let get_data = JSON.parse(localStorage.getItem('data'))
     let submit_btn_5th = document.querySelector('.next_button5');
@@ -137,7 +141,7 @@ function pageFive() {
     });
 }
 
-//==========================================================
+//===============================================================================================================
 function pageSix() {
     let get_data = JSON.parse(localStorage.getItem('data'))
     let submit_btn_6th = document.querySelector('.next_button6');
@@ -160,12 +164,12 @@ function pageSix() {
 }
 
 
-//==========================================================
+//=================================================================================================================
 
 // For creating new User 
 async function RegisterNewUser(details) {
     try {
-        let Register_new_user = await fetch('http://localhost:3000/profile', {
+        let Register_new_user = await fetch('https://6399f35116b0fdad774f2f63.mockapi.io/profile', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -181,7 +185,7 @@ async function RegisterNewUser(details) {
         alert('Bad request');
     }
 }
-// ================================valid a phone number id====================
+// ======================================valid a phone number id======================================================
 
 function validation(elem) {
     document.getElementById('res').style.color = 'red';
@@ -201,7 +205,7 @@ function validation(elem) {
     }
 }
 
-// =================================valid a mail id===========================
+// ===============================================valid a mail id=========================================
 
 function validationMail() {
     // var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
