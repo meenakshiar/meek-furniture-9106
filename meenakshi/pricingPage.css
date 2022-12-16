@@ -32,8 +32,9 @@
 
 .pricing-card{
     /* border: 1px solid green; */
-    /* margin: 25px; */
+    padding: 5px;
     width: 20%;
+    border-right: 2px solid #ebedf5 ;
 }
 
 /* pricing cards section -----------------------*/
@@ -91,8 +92,12 @@
 .pricing-card li{
     cursor: pointer;
     line-height: 30px;
-    text-decoration: none ;
-    list-style: none;
+    border-bottom: 1px dashed;
+    list-style: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2020%2015%22%3E%3Cpath%20stroke%3D%22%2308cf65%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%223%22%20d%3D%22M1.3%206.7l6%206L18.8%201.3%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.pricing-card li:hover{
+    border: none;
 }
 
 li > span {
@@ -114,6 +119,13 @@ li > span {
     margin-bottom: 8px;
 }
 
+.card-two button:hover, 
+.card-four button:hover,
+.diff-card2 button:hover,
+.diff-card4 button:hover{
+    background-color: #1c9f50;
+}
+
 #btn, #btn2, #btn3, #btn4{
     cursor: pointer;
     border-radius: 12px;
@@ -127,8 +139,12 @@ li > span {
     margin-bottom: 8px;
 }
 
-#btn :hover{
+#btn:hover,
+#btn2:hover,
+#btn3:hover,
+#btn4:hover{
     background-color: #0b4a52;
+    color: white;
 }
 
 
@@ -308,6 +324,11 @@ li > span {
     /* padding: 14px 22px; */
 }
 
+.input_button form > button:hover{
+    cursor: pointer;
+    background-color: #1c9f50;
+}
+
 .leader-content{
     /* border: 1px solid; */
     display: flex;
@@ -318,25 +339,39 @@ li > span {
 }
 
 .faq-section{
-    border: 1px solid;
+    /* border: 1px solid; */
     background-color: #ebf5f3;   
     margin-top: 5%; 
     display: grid;
+    padding-bottom: 5%; 
 }
 
 .faq-card{
     margin: auto;
-    border: 1px solid ;
+    /* border: 1px solid ; */
+    display: grid;
 }
 
 .faq-card > div{
-    margin: 20px;
-    border: 1px solid;
-    width: 600px;
-    height: 80px;
+    margin: 15px;
+    /* border: 1px solid; */
+    width: 900px;
+    height: auto;
     border-radius: 12px;
     background-color: white;
-    
-    
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500px;
+    line-height: 28px; 
+    justify-content: space-around;
 }
 
+.faq-card > div:hover{
+    cursor: pointer;
+    background-color: #04454d;
+    color: white;
+}
+
+.faq-card i{
+    transform: rotate(180deg);
+}
