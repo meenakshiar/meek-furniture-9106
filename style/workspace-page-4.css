@@ -140,7 +140,9 @@ form {
     display: none;
 }
 
-.next_button {
+.next_button4,
+.next_button5,
+.next_button6 {
     padding: 13px 30px;
     border-radius: 5px;
     background-color: #006358;
