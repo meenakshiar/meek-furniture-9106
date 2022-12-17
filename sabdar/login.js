@@ -1,48 +1,48 @@
 
-class User{
+// class User{
 
-    constructor(){
+//     constructor(){
        
 
-    }
+//     }
 
-    validateUser(username){
+//     validateUser(username){
 
-        return username.includes("@") ? false : true;
-    }
-    validatePassword(password){
+//         return username.includes("@") ? false : true;
+//     }
+//     validatePassword(password){
 
-        return password.length<8 ? false : true;
-    }
+//         return password.length<8 ? false : true;
+//     }
 
-    async signUP(n,e,u,p,m){
-        let isValided =this.validatePassword(p) && this.validateUser(u);
-        if(isValided){
-            this.name=n;
-            this.email=e;
-            this.username=u;
-            this.password=p;
-            this.mobile=m;
+//     async signUP(n,e,u,p,m){
+//         let isValided =this.validatePassword(p) && this.validateUser(u);
+//         if(isValided){
+//             this.name=n;
+//             this.email=e;
+//             this.username=u;
+//             this.password=p;
+//             this.mobile=m;
             
 
-            // const register_api='https://masai-api-mocker.herokuapp.com/auth/register'
+//             // const register_api='https://masai-api-mocker.herokuapp.com/auth/register'
             
-            const register_api='http://localhost:3000/profile'
-            let data1=JSON.stringify(this)
-            const response = await fetch(register_api,{
+//             const register_api='http://localhost:3000/profile'
+//             let data1=JSON.stringify(this)
+//             const response = await fetch(register_api,{
 
-                method:"POST",
-                body:data1,
+//                 method:"POST",
+//                 body:data1,
 
-                headers:{
-                    "Content-Type":"application/json",
-                },
+//                 headers:{
+//                     "Content-Type":"application/json",
+//                 },
 
-            });
-            const data=await response.json();
+//             });
+//             const data=await response.json();
             
-        }
-    }
+//         }
+//     }
     
     async login(u,p){
 
@@ -68,7 +68,7 @@ class User{
         
         return data
     }
-}
+// }
 
 let user=new User();
 
