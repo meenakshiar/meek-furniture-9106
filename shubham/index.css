@@ -38,8 +38,8 @@ body{font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neu
 
 .sh_logo_div{text-align: center;
          background-color:#EBF5F3;
-         padding-bottom: 20px;
-         padding-top: 10px;}
+         padding-bottom: 80px;
+         padding-top: 30px;}
 
 .sh_logo_div>img{margin-left: 5%;}
 
@@ -54,7 +54,8 @@ body{font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neu
 #sh_p_arrow:hover{margin-left: 10px;
         transition:0.5s;}
 
-.sh_transform{text-align: center;}
+.sh_transform{text-align: center;
+              padding: 50px 0px 50px 0px;}
 .sh_transform>h1{color: black;
                          font-size: 32px;}
 .sh_card_marketing{display: grid;
@@ -83,8 +84,8 @@ body{font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neu
 #sh_bottom_div p{ color: white;}
 
 .sh_button_div{display: flex;
-               padding-top: 40px;
-               padding-bottom: 40px;
+               padding-top: 80px;
+               padding-bottom: 80px;
                font-size: 20px;
                justify-content: center;}
 
@@ -100,7 +101,34 @@ body{font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neu
                             transition: 0.7s;
                             cursor: pointer;}
 
+.sh_integrate_logo>div{display: flex;
+                       background-color:#EBF5F3;
+                       border-radius: 40%;
+                       width: auto;
+                       border: solid white 2px;
+                       justify-content: center;
+                       align-items: center;
+                       margin-top: 5px;}
+.sh_integrate_logo img{width: 18%;}
 
+.sh_integrate_logo p{font-size: 16px;
+                     font-weight: 600;
+                     padding-left: 4px;}
+
+.sh_integrate_logo>div:hover{cursor: pointer;
+                             border: solid #08cf65 2px;
+                             box-shadow:#EBF5F3 4px 4px 4px 4px;
+                             margin-top: -3px;
+                             margin-bottom: 4px;
+                             transition: 0.4s;
+                             }
+ .sh_integrate_logo{display: grid;
+                        margin: auto;
+                        gap: 10px;
+                        width: 80%;
+                        grid-template-columns: repeat(7,1fr);
+                        padding-bottom: 50px;
+                    }
 
 /*----------- mid screen --------------------------------------------*/
 @media(min-width: 600px) and (max-width: 1200px) {
@@ -127,6 +155,10 @@ body{font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neu
                padding: 15px 20px 15px 20px;
                margin: auto;
                }
+.sh_integrate_logo p{display: none;}
+.sh_integrate_logo img{width: 50%;}
+.sh_integrate_logo>div{border-radius: 50%;
+                       padding: 8px;}
 
 }
 
@@ -162,6 +194,11 @@ body{font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neu
                padding: 10px 20px 10px 20px;
                margin: auto;
                }
+
+               .sh_integrate_logo p{display: none;}
+               .sh_integrate_logo img{width: 50%;}
+               .sh_integrate_logo>div{border-radius: 50%;
+                                      padding: 8px;}
 
 }
 
