@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/style/dashboard.css">
+    <link rel="stylesheet" href="/vishal/style/dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -25,53 +25,93 @@
                     <i class="fa-solid fa-house-user"></i>
                 </div>
                 <div>
-                    <i class="fa-solid fa-greater-than"></i>
+                    <i class="fa-solid fa-greater-than" id="arrow1"></i>
                 </div>
                 <div>
                     <span>Box-Tech</span>
                 </div>
                 <div>
-                    <i class="fa-solid fa-greater-than"></i>
+                    <i class="fa-solid fa-greater-than" id="arrow2"></i>
                 </div>
                 <div>
                     <span>Box-Project</span>
                 </div>
                 <div>
-                    <i class="fa-solid fa-greater-than"></i>
+                    <i class="fa-solid fa-greater-than" id="arrow3"></i>
                 </div>
                 <div>
                     <span>week</span>
                 </div>
                 <div>
-                    <i class="fa-solid fa-thumbtack"></i>
+                    <i class="fa-solid fa-thumbtack" id="thumbrack"></i>
                 </div>
             </div>
 
             <div>
 
                 <div>
-                    <input type="text">
+                    <i class="fa fa-search" aria-hidden="true" id="seach_icon"></i>
+                    <input type="text" placeholder="Search">
                 </div>
 
                 <div>
-
+                    <button class="button_plus">|</button>
                 </div>
 
                 <div>
-                    <i class="fa-light fa-grid"></i>
+                    <button class="button_grid"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAEtJREFUSEtjZKAxYKSx+QzD0IL/////Rw42RkZGsC9JFYeZgRFEpBqES/0wtoDayZb+yXQ0kmH5ZuCS6WgqGvg4GPr5YOinoiHnAwC4UpAZRy7j/wAAAABJRU5ErkJggg==" /></button>
                 </div>
 
                 <div>
-                    <i class="fa-regular fa-circle-question"></i>
+                    <button class="button_question"><i class="fa-regular fa-circle-question"></i></button>
                 </div>
 
                 <div>
-
+                    <button class="button_profile"></button>
                 </div>
 
             </div>
         </div>
+
     </header>
+
+    <div class="side-bar">
+        <div class="menu">
+
+            <div class="item" style="visibility: hidden; padding-top: 25px;"><a href="#"><i
+                        class="fas fa-desktop"></i>Dashboard</a></div>
+
+            <div class="item">
+                <a class="sub-btn"><i class="fas fa-angle-right dropdown"></i>Tools</a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">No tools</a>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <a class="sub-btn"><i class="fas fa-angle-right dropdown"></i>Settings</a>
+                <div class="sub-menu">
+                    <a class="sub-btn"><i class="fas fa-cogs"></i>Settings<i
+                            class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                        <a href="#" class="sub-item">Sub Item 01</a>
+                        <a href="#" class="sub-item">Sub Item 02</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div>
+
+    </div>
 </body>
+<script src="">
+
+</script>
 
 </html>
