@@ -126,7 +126,7 @@ li > span {
     background-color: #1c9f50;
 }
 
-#btn, #btn2, #btn3, #btn4{
+#getbtn, #btn2, #btn3, #btn4{
     cursor: pointer;
     border-radius: 12px;
     width: 200px;
@@ -139,7 +139,7 @@ li > span {
     margin-bottom: 8px;
 }
 
-#btn:hover,
+#getbtn:hover,
 #btn2:hover,
 #btn3:hover,
 #btn4:hover{
@@ -254,7 +254,7 @@ li > span {
     font-size: 18px;
     line-height: 35px;
     font-weight: 700px;
-}
+}border
 
 .add-on-card div > h5{
     font-size: 26px;
@@ -291,11 +291,13 @@ li > span {
 }
 
 .input_button{
+    margin: auto;
     /* border: 1px solid ; */
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+    width: 99%;
     height: auto;
     margin-top: 5%;
 }
@@ -329,6 +331,52 @@ li > span {
     background-color: #1c9f50;
 }
 
+
+
+/* mid */
+@media(min-width: 600px) and (max-width: 1200px){
+    .input_button form > button{
+        margin: 5% 0 5% 30%;
+    }
+
+    .input_button form > input{
+        margin-left: 13%;
+    }
+
+    .signup-section h2{
+        font-size: 30px;
+        line-height: 2;
+    }
+    .signup-section img{
+        /* border: 1px solid ; */
+        width: 90%;
+    }
+
+    .add-on-cardwrap{
+        /* border: 1px solid red; */
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .add-on-card{
+        padding: 2%;
+        height: auto;
+        line-height: 1.5;
+    }
+
+    .add-on-text > p{
+        width: 100%;
+    }
+
+    .pricing-banner,
+    .pricing-note p,
+    .logo-roll{
+        width: 90%;
+    }
+
+    
+
+}
+
 .leader-content{
     /* border: 1px solid; */
     display: flex;
@@ -340,6 +388,7 @@ li > span {
 
 .faq-section{
     /* border: 1px solid; */
+    width: 100%;
     background-color: #ebf5f3;   
     margin-top: 5%; 
     display: grid;
@@ -374,4 +423,12 @@ li > span {
 
 .faq-card i{
     transform: rotate(180deg);
+    transition: 2s;
 }
+
+
+
+/* medium screen  */
+/* @media(min-width: 600px) and (max-width: 1200px)  */
+/* small screen */
+/* @media(min-width: 200px) and (max-width: 599px) */

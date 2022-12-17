@@ -1,3 +1,13 @@
+// page redirect to signup page 
+
+let getStartedbtn = document.querySelector("#getbtn");
+getStartedbtn.addEventListener("click", (e) => {
+    window.location.href="#";
+    console.log('working');
+})
+
+
+
 // change image on hover in add on section
 let addonDiv = document.querySelectorAll(".add-on-cardwrap");
 let addonImg = document.querySelectorAll(".add-on-card img");
