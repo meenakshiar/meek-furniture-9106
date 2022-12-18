@@ -1,147 +1,37 @@
 
-// class User{
 
-//     constructor(){
-       
 
-//     }
+let loginButton = document.getElementById("login");
 
-//     validateUser(username){
+let loginUserUsername = document.getElementById("login-username");
+let loginPassword = document.getElementById("login-password");
 
-//         return username.includes("@") ? false : true;
-//     }
-//     validatePassword(password){
+loginButton.addEventListener("click",async function(){
+    let userName = loginUserUsername.value;
+    let password = loginPassword.value;
 
-//         return password.length<8 ? false : true;
-//     }
 
-//     async signUP(n,e,u,p,m){
-//         let isValided =this.validatePassword(p) && this.validateUser(u);
-//         if(isValided){
-//             this.name=n;
-//             this.email=e;
-//             this.username=u;
-//             this.password=p;
-//             this.mobile=m;
-            
+    let userObj = {
+        username: userName,
+        password: password,
+    };
 
-//             // const register_api='https://masai-api-mocker.herokuapp.com/auth/register'
-            
-//             const register_api='http://localhost:3000/profile'
-//             let data1=JSON.stringify(this)
-//             const response = await fetch(register_api,{
-
-//                 method:"POST",
-//                 body:data1,
-
-//                 headers:{
-//                     "Content-Type":"application/json",
-//                 },
-
-//             });
-//             const data=await response.json();
-            
-//         }
-//     }
-    
-    async login(u,p){
-
-        const login_data ={
-            username: u,
-            password: p,
-
-        };
-        let data2=JSON.stringify(login_data)
-        const login_api= 'https://masai-api-mocker.herokuapp.com/auth/login'
-
-        const response = await fetch(login_api, {
-
+    try {
+        let res = await fetch('https://6399f35116b0fdad774f2f63.mockapi.io/profile',{
             method: "POST",
-            body: data2,
-
             headers: {
-                "Content-Type":"application/json",
+                "Content-type": "application/json",
             },
+            body:JSON.stringify(userObj),
         });
+        let data = await res.json();
+        window.location.href="/meek-furniture-9106/vishal/html/dashboard.html"
+        alert("successfully login");
 
-        const data= await response.json();
-        
-        return data
+    } catch (error) {
+        console.log("error");
     }
-// }
 
-let user=new User();
-
+})
 
 
-
-let log=document.getElementById("login")
-log.onclick = async() => {
-
-    try{
-        const username= document.getElementById("login-username").value;
-    const password= document.getElementById("login-password").value;
-
-    let {token} = await user.login(username,password);
-    
-    getprofile(username,token)
-    }
-    catch(e){
-        console.log(e)
-    }
-}
-
-
-
-
-const getprofile = async (username,token) => {
-
-    try{
-        // let api_link = `https://masai-api-mocker.herokuapp.com/user/${username}`
-
-        let api_link = `http://localhost:3000/profile/${username}`
-
-    let response= await fetch(api_link,{
-        headers : {
-            Authorization: `Bearer ${token}`,
-            'Content-Type' : 'application/json',
-        },
-    });
-
-    let data = await response.json();
-    alert(`welcome ${data.username}`)
-    window.location.href="./index.html"
-    }
-    catch(e){
-        console.log(e)
-        alert(`wrong username`)
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let next=document.getElementById("next")
-//     next.onclick=()=>{
-//         window.location.href="women.html";
-//     }
-//     let next1=document.getElementById("next1")
-//     next1.onclick=()=>{
-//         window.location.href="mensclothing.html";
-//     }
-
-//     let logo=document.getElementById("logo");
-//     logo.onclick=()=>{
-//         window.location.href="index.html";
-//     }

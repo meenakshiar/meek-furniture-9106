@@ -1,0 +1,209 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* body {
+    /* margin: 0; */
+  /* } */ 
+  
+  /* #container21{
+    margin: 0;
+    box-sizing: border-box;
+  } */
+  
+  /* .dropbtn{
+  color: yellow;
+  font-weight: bolder;
+  background-color: #05b858;
+  } */
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    /* align-items: center; */
+    
+  
+  }
+  
+  .navbar a {
+    float: left;
+    /* font-size: 16px; */
+    font-weight: bolder;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar_right{
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+  }
+  
+  
+  .navbar_right button:hover{
+    background-color: #05b858 ;
+  }
+  .navbar_right button{
+    background-color: #08cf65 ;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px  25px;
+    /* font-weight: bold; */
+    font-size: 17px;
+    border: none;
+    
+  }
+  
+  #nav_img img{
+  border: 0px solid rebeccapurple;
+  /* height: 80px; */
+  width: 12%;
+  margin-top: -60px;
+  margin-bottom: -65px;
+  /* padding-top: -150px ; */
+  }
+  
+  
+  .navbar img{
+    float: left;
+    /* width: 200px; */
+    width: 15%;
+   
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: grey;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+    font-weight: bold;
+    /* align-items: baseline; */
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ebf5f3;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content .header {
+    background: red;
+    padding: 16px;
+    color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    background-color: #ffffff;
+    height: auto;
+  }
+  
+  .column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    font-size: 17px;
+    /* margin-bottom: 100px; */
+  }
+  
+  
+  .column h4 {
+    color: grey;
+    font-size: 14px;
+  }
+  /* .column img {
+  
+    
+  
+  } */
+  
+  
+  #dropdown_img{
+    border: 0px solid rebeccapurple;
+    background-color: #ebf5f3;
+    /* text-align: center; */
+    /* padding-left: 20px; */
+    padding: 20px;
+    border-radius: 10px;
+    float: left;
+  
+  }
+  #dropdown_img img{
+    width: 80%;
+    height: 150px;
+    border: 0px solid red;
+    border-radius: 10px;
+    
+  }
+  
+  .column p {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: small;
+    margin-top: -25px;
+  }
+  
+  .column div:hover {
+    background-color: #ebf5f3;;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+
+  /* @media screen and (max-width: 300px) {
+    .column {
+      width: 50%;
+      height: auto;
+    }
+  } */
