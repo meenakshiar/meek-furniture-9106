@@ -6,29 +6,31 @@
     width:100%;
     /* margin-top: 0px; */
     background-color: rgb(235, 245, 243);
-    height:500px
 }
 #top{
-    width:90%;
-    display:flex;
+    width:85%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
     margin:auto;
     justify-content: space-evenly;
+    padding-bottom: 50px;
     /* border:1px solid blue; */
 }
 #top>div{
     /* border:1px solid red ; */
     padding-top: 15px;
     border-radius: 8px;
-    overflow: hidden;
+    overflow: hidden;;
+    padding-bottom: 10px;
     
 }
 #top>div>img{
     width:95%;
     height:200px;
     border-radius: 10px;
-    margin-left: 10px;
+    padding-left: 10px;
     transition: transform .5s ease;
-    /* padding-top: 15px; */
+    padding-top: 15px;
     /* border:1px solid red */
 }
 #top>div>h3{
@@ -46,8 +48,9 @@
     font-family: TT_Norms_Pro, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Oxygen-Sans, "Fira Sans", "Droid Sans", Ubuntu, Cantarell, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 #header{
-    width:500px;
+    width:85%;
     margin:auto;
+    text-align: center;
 }
 #header>h1{
 
@@ -55,8 +58,8 @@
     font-size: 56px;
     /* margin-left :535px; */
     color: rgb(24, 31, 56);
-    margin-top:30px;
-    margin-bottom:30px;
+    padding-top:30px;
+   padding-bottom:30px;
     font-family:  TT_Norms_Pro, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Oxygen-Sans, "Fira Sans", "Droid Sans", Ubuntu, Cantarell, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
@@ -171,17 +174,17 @@ color:white;
     transform: scale(1.01);
 }
 #search{
-    width:30px;
+    width:30%;
     /* border:1px solid red; */
-    margin-left: 135px;
+    padding-left: 9%;
     margin-top:20px;
     margin-bottom:15px
 }
 #search>i{
     color:rgb(10, 97, 90)
 }
-#search>input{
-    width:550px;
+input{
+    width:100%;
     height:50px;
     border-radius: 10px;
     font-size: 20px;
@@ -198,7 +201,7 @@ color:white;
     }
     #top{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
 
     #main1{
@@ -234,3 +237,6 @@ color:white;
     }
     
 }
+
+
+/* **************************footer************************* */
