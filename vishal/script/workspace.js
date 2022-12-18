@@ -158,6 +158,7 @@ function pageSix() {
             ...get_data
         };
         localStorage.setItem('data', JSON.stringify(details));
+        window.location.href = 'dashboard.html';
         RegisterNewUser(details);
 
     });
