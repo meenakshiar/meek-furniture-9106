@@ -9,12 +9,22 @@
     <link rel="shortcut icon" href="./pricingImages/BoxTech logo.png" type="image/x-icon" >
     <link rel="stylesheet" href="./pricingPage.css">
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
+
+    <div id="progress">
+        <span id="pro-value"> &#x1f815; </div></span>
+    </div>
+    <!-- -------------------------------- -->
+
     <div class="intro">
         <p> <b> Plans for Every Team </b></p>
     </div>
+
+
     <!-- -------------------------------- -->
     <div class="pricing-card-wrapper">
 <!-- 1 -->
@@ -31,8 +41,40 @@
                     <h2>$0 </h2>
                     <p>user/month</p>
                 </div>
-                 
-                <button id="getbtn">Get started </button>
+<!--                  
+                <button class="redirect-page-m" id="getbtn" onclick="get()">Get started </button> -->
+
+
+
+                
+                <button type="button" id="getbtn" class="btn btn-primary redirect-page-m" data-toggle="modal" data-target="#exampleModalCenter">
+                    Get started
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Get Your Free Account </h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <input type="email" placeholder="Enter your business email">
+                        </div>
+                        <div class="modal-footer">
+                          
+                          <button type="button" class="btn btn-primary">Sign up now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+
+
+
                 <p>No credit card required</p>
             </div>
 
@@ -49,7 +91,7 @@
             </div>
 
             <div class="card-four">
-                <button id="btn2">Get Started </button>
+                <button class="redirect-page-m" id="btn2">Get Started </button>
                 <p>No credit card required</p>
             </div>
 
@@ -383,26 +425,61 @@
         <h2>FAQ</h2>
 
         <div class="faq-card">
-            <div  id="faq1"> 
-                <h4> 1. What are the different types of licenses?<i style="margin-left: 50%;" class="fa-solid fa-sort-up"></i>  </h4>             
+            <div  class="showFaqContent" id="faq1"> 
+                <h4> 1. What are the different types of licenses?<i style="margin-left: 50%;" class="fa-solid fa-sort-up dropdown"></i>  
+                </h4>      
+                <div id="faq-p1">
+                    
+                </div>       
             </div> 
-            <div id="faq2"> 
+
+            <div class="showFaqContent" id="faq2"> 
                 <h4>2. What happens when my trial has expired? 
                     <i style="margin-left: 48%;" class="fa-solid fa-sort-up"></i> 
                 </h4>
+                <div id="faq-p2">
+                    
+                </div>
             </div>
-            <div id="faq3">
+            <div class="showFaqContent" id="faq3">
                 <h4>3. How do I purchase a subscription? 
                     <i style="margin-left: 55%;" class="fa-solid fa-sort-up"></i>
                 </h4>
+                <div id="faq-p3">
+                    
+                </div>
             </div>
-            <div id="faq4"> 
+            <div class="showFaqContent" id="faq4"> 
                 <h4>4. Can I pay in my local currency and what kind of taxes apply?
                     <i style="margin-left: 30%;" class="fa-solid fa-sort-up"></i>
                 </h4>
+                <div id="faq-p4">
+                    
+                </div>
             </div>
+          
         </div>
     </div>
+
+
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"> 
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('faq-section').click(function(){
+                $(this).next('faq-card').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+
+            })
+        })
+    </script> -->
 
 </body>
 </html>
