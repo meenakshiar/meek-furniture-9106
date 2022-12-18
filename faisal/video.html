@@ -25,7 +25,7 @@
         </div>
     </div>
     <div  id="about">
-        <h3>More about this video</h3>
+        <h3>More about this video <span>&#9662</span></h3>
     </div>
 
 
@@ -35,7 +35,6 @@
         </div>
         <div id="bot2">
             
-                <button>fhdgs</button>
            
             <div>
                 <p>BEST PRACTICES</p>
@@ -50,7 +49,6 @@
                 <h3>Getting clear visiblity for your team</h3>
             </div>
             
-                <button>fhdgs</button>
             
         </div>
 
@@ -60,17 +58,40 @@
 </html>
 <script>
 
-let des=document.querySelector("#about")
-des.addEventListener("click",myfunc3)
-function myfunc3(){
-        des.innerHTML=""
-        des.innerHTML=`
-        <h3 >Hide Descrition</h3>
-        <p > Digital Transformation and the pace of work has accelerated over the years, giving way to work complexities caused by disparate apps and data overload. This <br>has made it difficult for teams to achieve true visibility and collaboration. Find out how one team found a simple solution to these complexities. AVEVA’s <br>Senior Strategic Programs Manager in Marketing, will share their on-going journey to bring work into one place and achieve better alignment, together.</p>`
-}
+// let des=document.querySelector("#about")
+// des.addEventListener("click",myfunc3)
+// function myfunc3(){
+//         des.innerHTML=""
+//         des.innerHTML=`
+//         <h3>Hide Description</h3>
+//         <p> Digital Transformation and the pace of work has accelerated over the years, giving way to work complexities caused by disparate apps and data overload. This <br>has made it difficult for teams to achieve true visibility and collaboration. Find out how one team found a simple solution to these complexities. AVEVA’s <br>Senior Strategic Programs Manager in Marketing, will share their on-going journey to bring work into one place and achieve better alignment, together.</p>`
+// }
 let des1=document.querySelector("#webi")
 des1.addEventListener("click",myfun4)
 function myfun4(){
     window.location="webinar.html"
 }
+
+// **********************************
+
+let faq4p = document.querySelector('#about')
+let faqText4 = document.querySelector("#about");
+let count = 0
+faqText4.addEventListener("click", (event) => {
+    count++
+    console.log(count)
+    if (count % 2 == 0) {
+        faq4p.innerHTML =  `<h3>More about this video <span>&#9662<span></h3>`;
+    } else {
+        faq4p.innerHTML = "";
+        // console.log('working');
+        faq4p.style.backgroundColor = "white"
+        faq4p.style.color = "black"
+        faq4p.innerHTML = `
+        <h3>Hide Description <span>&#9652<span></h3>
+     <p class="showContent-p"> All our prices are listed in US dollars, but your bank will be able to convert this to your local currency upon purchase. You will also receive your invoice in US dollars. In regards to tax implications, all of our prices do not include applicable state/local taxes and you (the client) will be responsible for them. If you have any questions, please speak to your sales representative and we’ll be happy to help.
+     </p>         
+    `
+    }
+});
 </script>
