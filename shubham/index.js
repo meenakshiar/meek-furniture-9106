@@ -1,3 +1,8 @@
+function redirectbtn_s(){
+  window.location.href="/vishal/html/workspace-page-1.html"
+}
+
+
 document.querySelectorAll(".sk_carousel").forEach((carousel) => {
     const items = carousel.querySelectorAll(".sk_carousel__item");
     const buttonsHtml = Array.from(items, () => {

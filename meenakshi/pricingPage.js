@@ -41,7 +41,8 @@ let getStartedbtn = document.getElementById("btn2");
 // console.log(getStartedbtn);
 
 function get() {
-    console.log("hello")
+    // console.log("hello");
+    window.location.href="/vishal/html/workspace-page-1.html";
 }
 
 // change image on hover in add on section
@@ -67,7 +68,7 @@ signupBtnRedirect.addEventListener("click", (event) => {
     // console.log("working");
     // signupInputTag.focus();
     if (signupInputTag.value) {
-        window.location.href = "google.com";
+        window.location.href = "/vishal/html/workspace-page-1.html";
     } else {
         alert("Please fill your email address to continue!")
     }

@@ -1,5 +1,7 @@
 
-
+function redirect_page(){
+    window.location.href="/vishal/html/workspace-page-1.html"
+}
 
 let loginButton = document.getElementById("login");
 
