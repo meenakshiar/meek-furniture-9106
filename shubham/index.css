@@ -37,22 +37,24 @@ body{font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neu
              
 
 .sh_logo_div{text-align: center;
-         background-color:#EBF5F3;
-         padding-bottom: 80px;
-         padding-top: 30px;}
+            background-color:#EBF5F3;
+            padding-bottom: 80px;
+            padding-top: 30px;}
 
-.sh_logo_div>img{margin-left: 5%;}
+.sh_logo_div>img{
+            margin-left: 5%;}
 
 #sh_arrow{display: flex;
-          text-align: left;}
+           text-align: left;}
 #sh_arrow p{font-size: 23px;
-        color:green;
-        cursor: pointer;
+          color:green;
+          cursor: pointer;
         }
 #sh_p_arrow{ margin-left: 1px;
-    font-size: 28px}
-#sh_p_arrow:hover{margin-left: 10px;
-        transition:0.5s;}
+          font-size: 28px
+          }
+/* #sh_p_arrow:hover{margin-left: 10px;
+           transition:0.5s;} */
 
 .sh_transform{text-align: center;
               padding: 50px 0px 50px 0px;}
@@ -68,6 +70,7 @@ body{font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neu
                                border-radius: 10px;
                                height: 400px;
                                padding: 25px;}
+ .sh_card_marketing img{width: 90%;}  
  .sh_card_marketing>div:hover{background-color: #181f38;
                               color: white;
                               cursor: pointer;
@@ -76,11 +79,14 @@ body{font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neu
                               line-height: 25px;}
 
 
+
 #sh_bottom_div{background-color: #181f38;
                flex-direction: column;
                padding: 60px 0px 80px 0px;
                text-align: center;
-                               color: white;}
+                color: white;}
+
+
 #sh_bottom_div p{ color: white;}
 
 .sh_button_div{display: flex;
@@ -127,25 +133,81 @@ body{font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neu
                         gap: 10px;
                         width: 80%;
                         grid-template-columns: repeat(7,1fr);
-                        padding-bottom: 50px;
                     }
 
+
+                    
+            .sk_carousel{width: 80%;
+                        margin: auto;}
+            /* .sk_carousel>div{} */
+            .sk_carousel__item {
+              height: 480px;
+              border-radius: 15px;
+              background:white;
+              font-family: "Quicksand", sans-serif;
+              display: none;
+            }
+
+            .sk_carousel__item img{width: 30%;
+              border-top-left-radius: 15px;
+              border-bottom-left-radius: 15px;}
+            
+            .sk_carousel__item--selected {
+              display: flex
+            }
+            
+            .sk_carousel__nav {
+              width: 100%;
+              bottom: 0;
+              left: 0;
+              text-align: center;
+            }
+            
+            .sk_carousel__button {
+              width: 50px;
+              height: 6px;
+              margin-bottom: 50px;
+              display: inline-block;
+              background: gray;
+              border-radius: 15%;
+              margin: 0 5px;
+              margin-top: 5px;
+              cursor: pointer;
+            }
+            
+            .sk_carousel__button--selected {
+                background-color: green;
+            }
+            .sk_carousel>div>div{
+              font-size: 30px;
+              padding: 4%;
+            }
+
+            .sk_carousel p:nth-child(2){font-size: 22px;}
+
+            .arayn_cr_div{background-color:#EBF5F3;
+             padding-top: 30px;
+             padding-bottom: 50px;}
 /*----------- mid screen --------------------------------------------*/
 @media(min-width: 600px) and (max-width: 1200px) {
 .sh_text_image{ flex-direction: column;
                 width: 100%;
-            text-align: center;}
+            text-align: center;
+            }
 
 
 .sh_text_image button{margin-top: 10px;}
-.sh_text_image>div>img{width: 80%;}
-.sh_text_image>div{width: 100%;}
+.sh_text_image>div>img{width:100%;}
+ .sh_text_image>div{width: 100%;} 
 
 #sh_arrow{justify-content: center;
 }
 
 .sh_card_marketing{
     grid-template-columns: repeat(2,1fr); }
+
+    .sh_card_marketing>div{
+      height: auto;}
 
     .sh_button_div{
         flex-direction: column;
@@ -160,7 +222,30 @@ body{font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neu
 .sh_integrate_logo>div{border-radius: 50%;
                        padding: 8px;}
 
+ .sh_button_div{padding-top: 50px;
+       padding-bottom: 50px;}
+
+       #sh_bottom_div h1, #sh_bottom_div p{width: 90%;
+        margin: auto;}
+
+        .sk_carousel__item img{
+          display: none;
+        }
+
+        .sh_text_image p,.sh_transform{
+          margin-left: 20px;
+          margin-right: 20px;
+          padding-left: 20px;
+          padding-right: 20px;
+          }
+          #sh_p_arrow{ margin-left: -120px;
+            }
+            .sk_carousel__item {
+              height: auto}
+                
 }
+
+
 
 
 
@@ -182,12 +267,15 @@ body{font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neu
 #sh_arrow{justify-content: center;}
 .sh_card_marketing{
     grid-template-columns: repeat(1,1fr); }
-
+    .sh_card_marketing img{width: 100%;}
     .sh_button_div{
         padding-top: -15px;
         padding-bottom: -15px;
         flex-direction: column;
         text-align: center;}
+
+        .sh_card_marketing>div{
+          height: auto;}
 
 .sh_button_div button{width:180px;
                font-size: 15px;
@@ -195,11 +283,39 @@ body{font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neu
                margin: auto;
                }
 
-               .sh_integrate_logo p{display: none;}
-               .sh_integrate_logo img{width: 50%;}
-               .sh_integrate_logo>div{border-radius: 50%;
-                                      padding: 8px;}
+.sh_integrate_logo p{display: none;}
+.sh_integrate_logo img{width: 120%;}
+.sh_integrate_logo>div{border-radius: 50%;
+                        padding: 10%;}
 
+ .sh_button_div{padding-top: 50px;
+        padding-bottom: 0px;}
+
+ #sh_bottom_div h1, #sh_bottom_div p{width: 90%;
+            margin: auto;}
+
+ .sk_carousel__item img{
+              display: none;
+            }
+            .sh_text_image p,.sh_transform{
+              margin-left: 20px;
+              margin-right: 20px;
+              padding-left: 20px;
+              padding-right: 20px;
+              }
+              .sk_carousel>div>div{
+                font-size: 18px;
+              }
+
+              .sk_carousel__button {
+                width: 10px;
+                border-radius: 50px;}
+     .sk_carousel p:nth-child(2){font-size: 16px;}
+     .sk_carousel__item {
+      height: auto}
+
+      
+    
 }
 
 
