@@ -1,7 +1,7 @@
 footer{display: grid;
-      gap:10px;
-      grid-template-columns: repeat(6,1fr);
-    width: 80%;
+    gap:10px;
+    grid-template-columns: repeat(6,1fr);
+    width: 90%;
     margin-left: 100px;
     margin-right: 100px;
     font-family: "TT_Norms_Pro",-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Roboto,Oxygen-Sans,"Fira Sans","Droid Sans",Ubuntu,Cantarell,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -15,27 +15,75 @@ footer ul li{
 }
 
 
-footer a,footer h3{color:white;
+footer a,footer h3{
+    color:white;
     line-height: 50px;
-          }
+}
 
 
-footer ul li:hover{text-decoration: underline;
-                   text-underline-offset: 4px;
-                   }
-footer a:hover{color: #08cf65}
+footer ul li:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+footer a:hover{
+   color: #08cf65
+}
 
 footer a{
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 25px;
 }
 
-.footer_div{background-color:#0c3245  ;
-  width: 100%;
+.footer_div{
+    background-color:#0c3245  ;
+    width: 100%;
 }
 
-.sh_store_img,.sh_logo_img{display: flex;
+.last_div_sh{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.last_div_sh>div{
+  display:  flex;
+  width: 50%;
+  justify-content:center;}
+
+.last_div_sh img{
+  height: 40%;
+  background-color: white;
+  padding: 1px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+.sk_polocy{
+  text-align: center;
+  padding-bottom: 30px;
+  line-height: 5px;
+  color: white;
+  width: 80%;
+  margin: auto;
+}
+
+.sh_logo_img img{
+  background-color: white;
+  padding: 1px;
+  border-radius: 50%;
+  align-items: center;
+}
+.sh_logo_img img:hover{
+  background-color: #4aff9e;
+  cursor: pointer;
+}
+
+/* .sh_logo_img{padding: 50px;} */
+
+
+/* .sh_store_img,.sh_logo_img{display: flex;
               width: 50%;
               padding-bottom: 15px;
              justify-content: center;
@@ -54,7 +102,7 @@ footer a{
 .last_div_sh{display: flex;
              width: 100%;
              margin: auto;
-            padding-bottom: 50px;}
+            padding-bottom: 50px;} 
 
 
 
@@ -62,11 +110,28 @@ footer a{
 
 /*----------- mid screen --------------------------------------------*/
 @media(min-width: 600px) and (max-width: 1200px) {
-   footer{grid-template-columns: repeat(3,1fr);}
-
-   .last_div_sh{
-    flex-direction: column;
+    footer{
+      grid-template-columns: repeat(3,1fr);
     }
+
+    footer{
+      width: 70%;
+    }
+   
+    .last_div_sh{
+      flex-direction: column;
+    }
+
+    .last_div_sh img{height:50px;
+     padding: 1px;
+     margin-top: 10px;
+    }
+
+    .last_div_sh>div{margin: auto;
+    }
+    
+    .sk_polocy{line-height: 20px;}
+    
   
   }
   
@@ -76,9 +141,23 @@ footer a{
   /*---- small screen -------------------------------------------*/
   @media(min-width: 200px) and (max-width: 599px) {
     footer{grid-template-columns: repeat(1,1fr);}
-    .last_div_sh{
-      flex-direction: column;
-      }
+    
+
+      footer ul li{display: none;
+    }
+
+      footer h3{line-height: 10px;
+        text-align: left;
+        margin-left: -50px;
+        }
+      footer{width: 40%;}
+      .last_div_sh{flex-direction: column;}
+      .last_div_sh img{height:30px;
+       padding: 1px;
+       margin-top: 10px;}
+      .last_div_sh>div{margin: auto;} 
+      .sk_polocy{display: none;}
+      .last_div_sh{padding-bottom: 20px;}
   
   }
   
