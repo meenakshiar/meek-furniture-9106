@@ -178,7 +178,7 @@ async function RegisterNewUser(details) {
             body: JSON.stringify(details)
         });
         console.log(Register_new_user);
-        if (Register_new_user.ok === true) {
+        if (Register_new_user.ok) {
             alert('User has been created');
         }
 

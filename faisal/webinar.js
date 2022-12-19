@@ -177,8 +177,6 @@ function mychange() {
 mychange()
 
 
-
-
 function myfunc2() {
     var a = document.querySelector(".mylist")
 

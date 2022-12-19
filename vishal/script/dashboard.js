@@ -8,9 +8,13 @@ async function FetchDataFromApi() {
                 "Content-type": "application/json",
             },
         });
+        console.log(Fetched_the_data);
         if (Fetched_the_data.ok === true) {
             let Got_the_data = await Fetched_the_data.json();
             ShowData(Got_the_data);
+            console.log(Got_the_data);
+        } else {
+            alert('kuch toh hua hai yaha')
         }
     } catch (error) {
         alert("Was Not Able To Fetch The Data");
@@ -32,7 +36,7 @@ function ShowData(Got_the_data) {
                     <i class="fa-solid fa-bars" style="cursor: pointer;" ></i>
                 </div>
                 <div>
-                    <i class="fa-regular fa-envelope" style="cursor: pointer;"></i>
+                    <i class="fa-regular fa-envelope" onclick='jao()' style="cursor: pointer;"></i>
                 </div>
                 <div>
                     <i class="fa-solid fa-house-user" style="cursor: pointer;"></i>
@@ -326,6 +330,7 @@ function ShowData(Got_the_data) {
                     $(this).find('.dropdown').toggleClass('rotate');
                 });
             })
+
                 }
 </script>
             `;
