@@ -27,7 +27,13 @@ let calcScrollvalue = () => {
 window.onscroll = calcScrollvalue;
 window.onload = calcScrollvalue;
 
+function redirectbtn() {
+    window.location.href = '/vishal/html/workspace-page-1.html'
+}
 
+function jaoHomePagePe() {
+    window.location.href = '/index.html'
+}
 
 
 // page redirect to signup page 
@@ -42,7 +48,7 @@ let getStartedbtn = document.getElementById("btn2");
 
 function get() {
     // console.log("hello");
-    window.location.href="/vishal/html/workspace-page-1.html";
+    window.location.href = "/vishal/html/workspace-page-1.html";
 }
 
 // change image on hover in add on section
