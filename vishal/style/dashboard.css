@@ -18,7 +18,6 @@ body {
 
 .Navigation_bar>div:last-child {
     display: flex;
-    /* grid-template-rows: repeat(1fr, 3); */
     gap: 0.61rem;
 }
 
@@ -82,7 +81,6 @@ body {
     color: rgb(107, 107, 107);
     border: none;
     margin-left: -30px;
-    /* position: fixed; */
 }
 
 .button_plus {
@@ -118,7 +116,7 @@ body {
 .button_profile {
     background-color: #F57C00;
     border: none;
-    padding: 17px 17px;
+    padding: 6px 12px;
     border-radius: 10px;
     color: white;
     font-size: 19px;
@@ -126,17 +124,11 @@ body {
 
 .side-bar {
     background: #181f38;
-    /* backdrop-filter: blur(15px); */
     z-index: 20;
     width: 250px;
     overflow: hidden;
     height: 100vh;
     position: absolute;
-    /* top: 0; */
-    /* left: -200px; */
-    /* overflow-y: auto; */
-    /* transition: 0.6s ease; */
-    /* transition-property: left; */
 }
 
 .side-bar::-webkit-scrollbar {
@@ -209,12 +201,11 @@ body {
 
 .table_div {
     width: 80%;
-    /* position: relative; */
     display: flex;
     z-index: 20;
     padding-top: 4.7rem;
     padding-left: 17rem;
-    gap: 52.5rem;
+    gap: 49.5rem;
     align-items: center;
 }
 
@@ -246,6 +237,7 @@ body {
 }
 
 .table_div2 {
+
     width: 80%;
     display: flex;
     z-index: 20;
@@ -297,7 +289,7 @@ body {
 
 .table_div3 .sub-menu {
     display: none;
-    color: rgb(194, 192, 192);
+    color: rgb(255, 255, 255);
     font-size: 13px;
     text-decoration: none;
     padding-left: 20px;
@@ -329,7 +321,6 @@ body {
 
 nav ul {
     float: right;
-    /* margin-right: 10px; */
 }
 
 nav ul li {
@@ -347,7 +338,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: black;
+    color: grey;
 }
 
 nav ul ul {
@@ -371,6 +362,7 @@ nav ul ul li {
     display: list-item;
     position: relative;
     list-style: none;
+    background-color: white;
     padding-left: 15px;
     border-top: none;
 }
@@ -395,9 +387,63 @@ nav ul ul li a i {
 }
 
 nav ul ul li:hover {
-    background-color: rgb(210, 217, 219);
+    background-color: #181F38;
+    color: white;
 }
 
 nav ul ul li a input {
     margin-right: 10px;
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td,
+.fl-table th {
+    padding: 8px 15px;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.tb_series {
+    text-align: center;
+    width: 5%;
+}
+
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.fl-table thead th {
+    color: black;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: black;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+
+.table_div4 {
+    width: 82%;
+    display: flex;
+    z-index: 20;
+    margin-top: -2px;
+    padding-left: 15rem;
+    align-items: center;
 }
